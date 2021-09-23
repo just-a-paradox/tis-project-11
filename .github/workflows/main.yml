@@ -5,10 +5,12 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-    
+
+  workflow_dispatch:
+
 env:
   AWS_BUCKET_NAME: tis-project-11
-    
+
 jobs:
   deploy-docs:
     if: startsWith(github.event.head_commit.message, 'docs')
@@ -16,21 +18,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: install asciidoctor
         run: sudo apt install asciidoctor
-        
+
       - name: generate docs
         run: |
           mkdir docs/site/
           asciidoctor -R docs/src/ -D docs/site/ **/*.adoc
-        
+
       - name: configure aws
         uses: aws-actions/configure-aws-credentials@13d241b293754004c80624b5567555c4a39ffbe3
         with:
           aws-access-key-id: ${{ secrets.AWS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: eu-central-1
-          
+
       - name: deploy docs
         run: aws s3 cp docs/site s3://{{ env.AWS_BUCKET_NAME }}  --recursive
