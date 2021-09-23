@@ -1,0 +1,14 @@
+= Meeting Agenda
+Pavel Semenov <semenov1@uniba.sk>
+v1.0, 2021-09-23
+
+Meeting date: 22.09.2021
+
+.Agenda items
+* Discuss project theme
+* Complete the form
+** Rate suggested project themes according to the preference
+** Make a list of team members' skills
+** Suggest day and time for regular meetings with professor
+* Finish the first homework
+* Create project repository on GitHub

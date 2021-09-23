@@ -1,0 +1,10 @@
+= Meeting Notes
+Pavel Semenov <semenov1@uniba.sk>
+v1.0, 2021-09-23
+
+Meeting date: 22.09.2021
+
+.Notes
+* Pavel will create the project repository and add team members as contributors
+* Team members should think of the day and time to be used for team-only meetings
+* Pavel has to send the homework to the professor and agree upon day and time for team meetings with him
