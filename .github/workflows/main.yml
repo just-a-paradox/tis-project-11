@@ -7,13 +7,17 @@ on:
     branches: [ master ]
 
   workflow_dispatch:
+    inputs:
+      target:
+        required: true
+        default: docs
 
 env:
   AWS_BUCKET_NAME: tis-project-11
 
 jobs:
   deploy-docs:
-    if: startsWith(github.event.head_commit.message, 'docs')
+    if: startsWith(github.event.head_commit.message, 'docs') || github.event.inputs.target == 'docs'
     runs-on: ubuntu-latest
 
     steps:
