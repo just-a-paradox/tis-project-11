@@ -1,0 +1,12 @@
+= Documentation
+Pavel Semenov <semenov1@uniba.sk>
+v1.0, 2021-09-23
+
+This webpage contains full documentation to the project.
+
+---
+WARNING: Documentation is still a work in progress. Some pages might not be yet available.
+
+.Meetings
+* xref:meetings/agendas/nav.adoc[Agendas]
+* xref:meetings/notes/nav.adoc[Notes]

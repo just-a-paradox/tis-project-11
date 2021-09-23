@@ -1,0 +1,6 @@
+= Meeting Agendas
+Pavel Semenov <semenov1@uniba.sk>
+v1.0, 2021-09-23
+
+.List of meeting agendas
+* xref:agenda-2021-09-22.adoc[2021-09-22]
